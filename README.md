@@ -1,6 +1,6 @@
-# GadgetHeaven - E-Commerce Website
+# BookStore - E-Commerce Website
 
-Welcome to **GadgetHeaven**, an e-commerce platform where you can explore the latest gadgets, add them to your shopping cart, and manage your wishlist. The website is built using **React** and **Tailwind CSS** for styling, and leverages **React Router**, **Context API**, and custom hooks for state management.
+Welcome to **BookStore**, an online platform where you can browse a wide collection of books, manage your reading list, and keep track of your wishlist. The website is built using **React** and **Tailwind CSS** for styling, and utilizes **React Router**, **Context API**, and custom hooks for efficient state management.
 
 ## Live Website Link
 
@@ -8,69 +8,71 @@ You can check out the live version of the website here:
 
 [Live Website Link](#)
 
-## Requirement Document Link
-
-For more details, check out the project's requirements and documentation here:
-
-[Requirement Document Link](#)
-
 ## GitHub Repository
 
 You can find the full project repository on GitHub here:
 
-[Git Repository Link](#)
+[Git Repository Link](https://github.com/RakibHassan11/BookStore.git)
 
 ## Features
 
 ### 1. **Product Browsing**
-- Browse through a variety of gadgets, each with detailed descriptions, prices, ratings, and specifications.
-- The homepage features a clean, user-friendly layout with easy access to various categories and product listings.
+- Browse a wide variety of books with detailed descriptions, authors, genres, ratings, and page count.
+- The homepage showcases different categories and featured books for easy exploration.
 
-### 2. **Add to Cart**
-- Users can add products to their shopping cart.
-- The cart icon in the navigation bar dynamically displays the number of items in the cart.
-- Users can view, modify, and remove items from the cart.
+### 2. **Add to Read List**
+- Users can mark books as "Read" and add them to their read list.
+- The read list icon dynamically displays the number of books marked as read.
+- Users can view, manage, and remove books from the read list.
 
 ### 3. **Add to Wishlist**
-- Users can add products to their wishlist for future consideration.
-- A wishlist icon shows the number of items saved for later.
-- Wishlist items are saved even after page refreshes.
+- Users can save books to their wishlist for future reading.
+- The wishlist icon shows the number of books saved for later consideration.
+- Wishlist items are persisted even after a page refresh.
 
-### 4. **Product Details Page**
-- Clicking on a product shows its detailed description, including price, rating, and specifications.
-- Users can directly add the product to their cart or wishlist from this page.
+### 4. **Book Details Page**
+- Clicking on a book displays its detailed description, author information, ratings, and total pages.
+- Users can add the book to their read list or wishlist directly from the details page.
 
 ### 5. **Dynamic Navbar**
 - The navbar dynamically updates based on the current route, highlighting the active page with distinct styles.
-- Users can navigate easily between different sections such as "Home", "Cart", and "Wishlist".
+- Users can navigate between different sections like "Home", "Read List", and "Wishlist".
 
 ## Technologies Used
 
-- **React**: The website is built using React for a fast, component-based user interface.
+- **React**: The website is built using React to create a fast, component-based user interface.
 - **React Router**: For handling routing and navigation between pages without full-page reloads.
-- **Tailwind CSS**: For fast and responsive UI styling.
-- **Context API**: For managing global state (like the cart and wishlist).
-- **Custom Hooks**: To manage and organize state more efficiently, including custom hooks for cart and wishlist functionality.
-- **CSS/SCSS**: Styled with Tailwind CSS for a clean and modern design.
+- **Tailwind CSS**: Used for styling the app, providing a clean and responsive UI design.
+- **Context API**: For managing global state, like the read list and wishlist, across components.
+- **Custom Hooks**: Used to manage and organize state efficiently, including custom hooks for cart, read list, and wishlist functionality.
+- **LocalStorage**: Persisting the read list and wishlist data using localStorage to ensure data is saved even after page refreshes.
 
 ## React Concepts Demonstrated
 
-This project demonstrates various essential React concepts:
+This project demonstrates various React concepts, including:
 
-- **JSX**: Used for rendering HTML elements inside JavaScript.
-- **Components**: Reusable and self-contained UI elements.
-- **Props**: Passing data between components using props.
-- **State**: Managing local component state using `useState`.
-- **useEffect**: Performing side effects, like fetching data or updating the DOM.
-- **useContext**: Sharing global state across the app using the Context API.
-- **React Router**: Managing routing and navigation within the app.
-- **Event Handling**: Managing user interactions such as button clicks and form submissions.
-- **Lists and Keys**: Efficiently rendering dynamic lists of items using keys.
+- **JSX**: Used for rendering HTML elements within JavaScript.
+- **Components**: Building reusable components that encapsulate different parts of the UI.
+- **Props**: Passing data between components using props to maintain flexibility.
+- **State**: Managing local state within components using `useState`.
+- **useEffect**: Handling side effects such as fetching data or updating the DOM.
+- **useContext**: Sharing global state (like the cart, read list, and wishlist) across multiple components via Context API.
+- **React Router**: Navigating between pages using React Router for single-page app functionality.
+- **Event Handling**: Handling user interactions, including adding books to the cart, wishlist, and read list.
+- **Lists and Keys**: Dynamically rendering lists of books and managing keys for efficient rendering.
 
 ## Data Management
 
-The app uses the **Context API** to manage and share global state for the shopping cart and wishlist. This allows different parts of the application to access and modify the state without needing to pass props down through the component tree.
+The app uses **Context API** to manage and share global state, specifically for the read list and wishlist, which allows various components to interact with the data without passing props manually through the component tree.
 
-- **CartContext**: Manages the shopping cart data, including adding/removing products and keeping track of the total number of items.
-- **WishlistContext**: Manages the wishlist data, allowing users to save and remove products for future consideration.
+- **ReadListContext**: Manages the state of books that have been marked as "read". Users can add or remove books from their read list.
+- **WishlistContext**: Handles the state of books users wish to read in the future, allowing easy addition and removal of books.
 
+## Getting Started
+
+To get started with the project locally:
+
+1. Clone the repository:
+
+```bash
+git clone <https://github.com/RakibHassan11/BookStore.git>
