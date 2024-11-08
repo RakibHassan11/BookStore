@@ -6,7 +6,6 @@ const NavBar = () => {
   const links = <>
   <li><NavLink to = "/" >Home</NavLink></li>
   <li><NavLink to={"/listedBooks"}>Listed Books</NavLink></li>
-  <li><NavLink to={""}>Pages to Read</NavLink></li>
   </>
 
 
@@ -37,7 +36,7 @@ return (
     <a className="btn btn-ghost text-xl">Book Store</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 space-x-4">
       {links}
     </ul>
   </div>
